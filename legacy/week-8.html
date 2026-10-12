@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Paws & Hearts - Week 8</title>
+</head>
+
+<body>
+
+<h2>🐾 Available Pets</h2>
+
+<button onclick="loadPets()">Load Pets</button>
+
+<p id="pets"></p>
+
+<script>
+function loadPets(){
+    fetch("pets.txt")
+    .then(r => r.text())
+    .then(data => {
+        document.getElementById("pets").innerText = data;
+    });
+}
+</script>
+
+</body>
+</html>

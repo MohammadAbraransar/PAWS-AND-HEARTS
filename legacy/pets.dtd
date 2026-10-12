@@ -1,0 +1,7 @@
+<!ELEMENT pets (pet+)>
+<!ELEMENT pet (name,type,age,breed,status)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT type (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT breed (#PCDATA)>
+<!ELEMENT status (#PCDATA)>

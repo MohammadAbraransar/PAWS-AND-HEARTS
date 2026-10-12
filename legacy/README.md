@@ -1,0 +1,1 @@
+Original files from the supplied EWP project ZIP are retained here for reference. Run the upgraded website from the project root using index.html; legacy files are not part of the main navigation.

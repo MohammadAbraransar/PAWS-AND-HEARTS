@@ -1,0 +1,6 @@
+[
+    {"name":"Bruno","type":"Dog","age":2},
+    {"name":"Luna","type":"Cat","age":1},
+    {"name":"Rocky","type":"Dog","age":3},
+    {"name":"Milo","type":"Cat","age":2}
+]

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE pets SYSTEM "pets.dtd">
+<?xml-stylesheet type="text/xsl" href="pets.xsl"?>
+
+<pets>
+
+    <pet>
+        <name>Bruno</name>
+        <type>Dog</type>
+        <age>2 Years</age>
+        <breed>Labrador</breed>
+        <status>Available</status>
+    </pet>
+
+    <pet>
+        <name>Luna</name>
+        <type>Cat</type>
+        <age>1 Year</age>
+        <breed>Persian</breed>
+        <status>Available</status>
+    </pet>
+
+    <pet>
+        <name>Rocky</name>
+        <type>Dog</type>
+        <age>3 Years</age>
+        <breed>Beagle</breed>
+        <status>Available</status>
+    </pet>
+
+</pets>

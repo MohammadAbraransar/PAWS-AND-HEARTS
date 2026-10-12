@@ -1,0 +1,34 @@
+[
+  {
+    "id": "bruno",
+    "name": "Bruno",
+    "type": "Dog",
+    "age": 2,
+    "breed": "Labrador Retriever",
+    "status": "Available"
+  },
+  {
+    "id": "luna",
+    "name": "Luna",
+    "type": "Cat",
+    "age": 1,
+    "breed": "Persian",
+    "status": "Available"
+  },
+  {
+    "id": "rocky",
+    "name": "Rocky",
+    "type": "Dog",
+    "age": 3,
+    "breed": "Beagle",
+    "status": "Available"
+  },
+  {
+    "id": "milo",
+    "name": "Milo",
+    "type": "Cat",
+    "age": 2,
+    "breed": "Domestic Shorthair",
+    "status": "Available"
+  }
+]

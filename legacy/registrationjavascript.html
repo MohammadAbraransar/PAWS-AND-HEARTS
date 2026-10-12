@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register - Paws & Hearts</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function validateForm() {
+
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let phone = document.getElementById("phone").value;
+            let password = document.getElementById("password").value;
+            let confirm = document.getElementById("confirm").value;
+
+            if (name == "") {
+                alert("Please enter your name");
+                return false;
+            }
+
+            if (email == "") {
+                alert("Please enter your email");
+                return false;
+            }
+
+            if (phone.length != 10) {
+                alert("Phone number must contain 10 digits");
+                return false;
+            }
+
+            if (password.length < 6) {
+                alert("Password must contain at least 6 characters");
+                return false;
+            }
+
+            if (password != confirm) {
+                alert("Passwords do not match");
+                return false;
+            }
+
+            alert("Registration Successful!");
+            return true;
+        }
+    </script>
+
+</head>
+
+<body>
+
+<div class="form-box">
+
+    <h1>🐾 Paws & Hearts</h1>
+    <h2>Registration Form</h2>
+
+    <form onsubmit="return validateForm()">
+
+        <label>Full Name:</label><br>
+        <input type="text" id="name" placeholder="Enter your name"><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" id="email" placeholder="Enter your email"><br><br>
+
+        <label>Phone Number:</label><br>
+        <input type="text" id="phone" placeholder="Enter phone number"><br><br>
+
+        <label>Address:</label><br>
+        <textarea id="address" rows="3" placeholder="Enter address"></textarea><br><br>
+
+        <label>Password:</label><br>
+        <input type="password" id="password" placeholder="Create password"><br><br>
+
+        <label>Confirm Password:</label><br>
+        <input type="password" id="confirm" placeholder="Confirm password"><br><br>
+
+        <input class="btn" type="submit" value="Register">
+        <input class="clear" type="reset" value="Clear">
+
+    </form>
+
+    <p>
+        Already have an account?
+        <a href="login.html">Login</a>
+    </p>
+
+</div>
+
+</body>
+</html>

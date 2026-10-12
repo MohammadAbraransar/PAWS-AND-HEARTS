@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Paws & Hearts - Week 9</title>
+</head>
+
+<body>
+
+<h2>🐾 Pet Catalogue</h2>
+
+<button onclick="loadPets()">Load Pets</button>
+
+<div id="pets"></div>
+
+<script>
+function loadPets(){
+    fetch("pets.json")
+    .then(r => r.json())
+    .then(data => {
+        data.forEach(pet => {
+            document.getElementById("pets").innerHTML +=
+            "<p>" + pet.name + " - " + pet.type +
+            " - " + pet.age + " Years</p>";
+        });
+    });
+}
+</script>
+
+</body>
+</html>

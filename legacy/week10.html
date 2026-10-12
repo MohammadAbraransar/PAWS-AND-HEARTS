@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Paws & Hearts - Week 10</title>
+</head>
+
+<body>
+
+<h2>🐾 Pet Adoption</h2>
+
+<input id="name" placeholder="Your Name">
+<input id="pet" placeholder="Pet Name">
+
+<button onclick="adopt()">Adopt</button>
+
+<p id="result"></p>
+
+<script>
+function adopt(){
+    fetch("https://jsonplaceholder.typicode.com/posts",{
+        method:"POST",
+        headers:{"Content-Type":"application/json"},
+        body:JSON.stringify({
+            user:document.getElementById("name").value,
+            pet:document.getElementById("pet").value
+        })
+    })
+    .then(r=>r.json())
+    .then(data=>{
+        document.getElementById("result").innerText =
+        "Adoption request submitted! ❤️";
+    });
+}
+</script>
+
+</body>
+</html>

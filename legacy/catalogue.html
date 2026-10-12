@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pet Catalogue - Paws & Hearts</title>
+
+<style>
+body{margin:0;font-family:Arial;background:#fff7f0}
+header{background:#ff914d;color:white;text-align:center;padding:20px}
+nav{background:#333;padding:15px;text-align:center}
+nav a{color:white;text-decoration:none;margin:20px}
+.search{text-align:center;padding:25px}
+.search input{padding:12px;width:300px;border:1px solid #ccc;border-radius:20px}
+.catalogue{display:flex;justify-content:center;gap:25px;flex-wrap:wrap;padding:20px}
+.pet{background:white;width:220px;padding:15px;text-align:center;border-radius:12px;box-shadow:0 0 10px #ccc}
+.pet img{width:100%;height:180px;object-fit:cover;border-radius:10px}
+.pet h3{color:#ff7043}
+button{background:#ff914d;color:white;border:0;padding:10px 25px;border-radius:20px}
+button:hover{background:#e66f2f}
+</style>
+
+<script>
+function searchPet(){
+let s=document.getElementById("search").value.toLowerCase();
+for(let p of document.getElementsByClassName("pet"))
+p.style.display=p.innerText.toLowerCase().includes(s)?"block":"none";
+}
+function adopt(n){alert("You selected "+n+" for adoption! ❤️")}
+</script>
+</head>
+
+<body>
+
+<header>
+<h1>🐾 Paws & Hearts</h1>
+<p>Pet Care & Adoption Platform</p>
+</header>
+
+<nav>
+<a href="home.html">Home</a>
+<a href="catalogue.html">Catalogue</a>
+<a href="login.html">Login</a>
+<a href="register.html">Register</a>
+</nav>
+
+<div class="search">
+<h2>🐶 Pets Available for Adoption</h2>
+<input id="search" onkeyup="searchPet()" placeholder="Search pet...">
+</div>
+
+<div class="catalogue">
+
+<div class="pet">
+<img src="https://images.unsplash.com/photo-1558788353-f76d92427f16">
+<h3>Bruno</h3><p>Dog | 2 Years</p>
+<button onclick="adopt('Bruno')">Adopt</button>
+</div>
+
+<div class="pet">
+<img src="https://images.unsplash.com/photo-1519052537078-e6302a4968d4">
+<h3>Luna</h3><p>Cat | 1 Year</p>
+<button onclick="adopt('Luna')">Adopt</button>
+</div>
+
+<div class="pet">
+<img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1">
+<h3>Rocky</h3><p>Dog | 3 Years</p>
+<button onclick="adopt('Rocky')">Adopt</button>
+</div>
+
+<div class="pet">
+<img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba">
+<h3>Milo</h3><p>Cat | 2 Years</p>
+<button onclick="adopt('Milo')">Adopt</button>
+</div>
+
+</div>
+</body>
+</html>
